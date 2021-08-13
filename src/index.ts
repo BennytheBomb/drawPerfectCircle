@@ -1,4 +1,4 @@
-import { Path, Tool, setup, PointText, Point, Rectangle, PathItem, CompoundPath } from "paper";
+import { Path, Tool, setup, PointText, Point, CompoundPath } from "paper";
 
 window.onload = () => {
     const canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById('content');
@@ -25,12 +25,6 @@ window.onload = () => {
         fillColor: 'black',
         fontSize: 24,
     });
-
-    // new Path.Circle({
-    //     center: new Point(800, 500),
-    //     radius: 200,
-    //     strokeColor: 'black'
-    // });
 
     // Define a mousedown and mousedrag handler
     tool.onMouseDown = (event) => {
